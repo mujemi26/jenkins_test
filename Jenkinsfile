@@ -10,9 +10,9 @@ pipeline {
         stage('Run Hello World') {
             steps {
                 script {
-                    '''
-                    sh chmod +x helloScript.sh  // Make the script executable (if not already)
-                    sh ./helloScript.sh 
+                    
+                    sh 'chmod +x helloScript.sh'  // Make the script executable (if not already)
+                    sh './helloScript.sh' 
                     '''
                     // Run the Hello World script
                 }
