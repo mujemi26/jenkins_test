@@ -1,10 +1,10 @@
-80% of storage used … If you run out, you can't create, edit, and upload files.
+
 pipeline {
     agent any
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/mujemi26/jenkins_test'  // Replace with your repository URL
+                git 'https://github.com/mujemi26/jenkins_test.git'  // Replace with your repository URL
             }
         }
         stage('Run Hello World') {
