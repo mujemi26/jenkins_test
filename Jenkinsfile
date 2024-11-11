@@ -11,8 +11,8 @@ pipeline {
             steps {
                 script {
                     // Assuming the 'helloScript.sh' script is in the root of the repository
-                    sh 'chmod +x helloScript.sh'  // Make the script executable (if not already)
-                    sh './helloScript.sh'          // Run the Hello World script
+                    sh chmod +x helloScript.sh  // Make the script executable (if not already)
+                    sh ./helloScript.sh          // Run the Hello World script
                 }
             }
         }
